@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html, body{
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: 'poppins';
+}
+/* #background-video {
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  } */
+li{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	/* color: azure; */
+	text-decoration: none;
+}
+main video
+{
+	display: grid;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+width: 100%;
+height: 70%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1;
+position:absolute;
+object-fit: cover;
+}
+ header{
+	/* background-color: teal; */
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding:30px 10%;
+	text-transform: uppercase;
+}
+.nav
+{
+	order: 1;
+}
+.name
+{
+	cursor: pointer;
+}
+.menu
+{
+	list-style: none;
+}
+.menu li 
+{
+display: inline-block;
+padding:0px 20px;
+}
+
+main{
+	/* background-color:black; */
+    color: black;
+	margin: 0 auto;
+	width: 800px auto;
+	height: 2000px;
+	display: grid;
+	/* grid-template-columns: 1fr 1fr; */
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows:repeat(4,1fr);
+}
+footer
+{
+	/* background-color: black; */
+	height:150px;
+	display: grid;	
+}
+.bottom1
+{
+display: grid;
+
+justify-content: center;
+
+}
+
+.container1
+{
+	/* background-color: yellow;   */
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	
+}
+.container2
+{
+	/* background-color: brown; */
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 1.8;
+	display:grid;
+	justify-content: center;
+	align-content:start;
+	
+	
+}
+/* .container2 div{
+	/* background-color: chartreuse; }*/
+
+.container2 .content1
+{
+	display: grid;
+	padding-top: 50px;
+	
+}
+.content1 .buttons
+{
+	/* background-color: darkkhaki; */
+	display: grid;
+	align-content: end;
+	justify-content: center;
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container3
+{
+	/* background-color:dodgerblue; */
+	grid-column-start:1 ;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	display: grid;
+	justify-content: center;
+	align-content: start;
+	margin-top: 0px auto;
+	
+}
+.container4
+{
+	/* background-color:gainsboro; */
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.container4 img
+{
+	display: grid;
+     grid-column-start: 2;
+	 grid-column-end: 3;
+	 grid-row-start: 2;
+	 grid-row-end: 4;
+	 object-fit: cover;
+	 position: absolute;
+	 width: 66% ;
+	 height: 76.5% ;
+left: 505px;
+top: 618px;
+right: 0;
+bottom: 0;
+z-index: -1;
+opacity: 0.5;
+	 
+}
+.container5
+{
+	display:grid;
+	grid-column-start: 1;
+	grid-column-end:3;
+	grid-row-start: 3;
+	grid-row-end: 5;
+	/* background-color: lightcoral; */
+	height: 500px;
+	align-content: start;
+}
+.container5 img
+{
+	display: grid;
+     grid-column-start: 1;
+	 grid-column-end: 2;
+	 grid-row-start: 4;
+	 grid-row-end: 5;
+	 object-fit: cover;
+	 position: absolute;
+	 top: 0;
+     left:0;
+     top: 1294px;
+bottom: 0;
+z-index: -1;
+width: 100%;
+height: 114%;
+opacity: 0.5;
+}
+.container5 .content4
+{
+	display: grid;
+	justify-content: right;
+	padding-top:150px;
+	padding-bottom: 20px;
+	padding-right: 50px;
+}
+
+.container3 .content2
+{
+	display: grid;
+	justify-content: left;
+	padding-left: 50px;
+	
+}
+.container3  .content3
+{
+	display: grid;
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 250px;
+
+
+}
+/* header{
+	width: 100%;height: 100vh;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+nav{
+	width: 100%;height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white;display: flex;justify-content: space-between;
+	align-items: center;text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%;text-align: center;
+	/*background: red;
+
+
+nav .menu{
+	width: 40%;
+	display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+	width: 25%;
+	text-decoration: none; color: white;
+	font-weight: bold;	 
+}
+
+nav .menu a:first-child{
+	color: #00b894;
+
+}
+
+main{
+	height: 100%;
+	width: 100vw;
+	/* display: flex;
+	 justify-content: center;
+	align-items: center;
+	text-align: center;color: white; 
+
+
+
+
+section h3{
+	font-size: 35px;font-weight: 200;letter-spacing: 3px;
+	
+	color:teal;
+	text-align:right;
+	right: 100px;
+}
+
+section h1
+{
+	margin: 30px;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 2px 1px 5px black;
+	text-transform:uppercase;
+}
+
+section p{
+	font-size: 25px;
+	color: #eee;
+	white-space: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+	
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btnone{
+    /*background: #00b894;
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover{
+	background: #00b894;
+	color: white; 
+}
+
+section .btntwo{
+	background: #00b894;
+	color: white; 
+}
+
+.btntwo:hover{
+	background: #fff;
+    color: #000;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #00b894;
+}
+
+@keyframes  changetext{
+	0%{content: "UTTAR PRADESH"}
+	20%{content: "AGRA"}
+	35%{content: "DELHI"}
+	60%{content: "KERALA"}
+	80%{content: "JAIPUR"}
+	100%{content: "MUMBAI"}
+} */
